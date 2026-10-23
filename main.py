@@ -78,7 +78,7 @@ death_fade = ScreenFade(2, PINK, 4)
 BTN_MAIN_W = 300
 BTN_MAIN_H = 55
 start_button = Button.Button(SCREEN_WIDTH // 2 - BTN_MAIN_W // 2, SCREEN_HEIGHT // 2 - 100, "START GAME", pixel_font, WHITE, BTN_NORMAL, BTN_HOVER, BTN_MAIN_W, BTN_MAIN_H)
-choose_player = Button.Button(SCREEN_WIDTH // 2 - BTN_MAIN_W // 2, SCREEN_HEIGHT // 2 - 30, "CHOOSE PLAYER", pixel_font, WHITE, BTN_NORMAL, BTN_HOVER, BTN_MAIN_W, BTN_MAIN_H)
+choose_character = Button.Button(SCREEN_WIDTH // 2 - BTN_MAIN_W // 2, SCREEN_HEIGHT // 2 - 30, "CHOOSE CHARACTER", pixel_font, WHITE, BTN_NORMAL, BTN_HOVER, BTN_MAIN_W, BTN_MAIN_H)
 tutorial_button = Button.Button(SCREEN_WIDTH // 2 - BTN_MAIN_W // 2, SCREEN_HEIGHT // 2 + 40, "TUTORIAL", pixel_font, WHITE, BTN_NORMAL, BTN_HOVER, BTN_MAIN_W, BTN_MAIN_H)
 exit_button = Button.Button(SCREEN_WIDTH // 2 - BTN_MAIN_W // 2, SCREEN_HEIGHT // 2 + 110, "EXIT", pixel_font, WHITE, BTN_NORMAL, BTN_HOVER, BTN_MAIN_W, BTN_MAIN_H)
 
@@ -235,7 +235,7 @@ while run:
             start_intro = True
             game_paused = False
             kill_score = 0
-        if choose_player.draw(screen):
+        if choose_character.draw(screen):
             pygame.time.delay(200)
             pygame.event.clear()
             chse_player = True
